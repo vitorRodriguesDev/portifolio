@@ -2,9 +2,7 @@ import React from "react";
 import NavLink from "./NavLink";
 
 interface INavLink {
-    links: [{
         path: string, title: string
-    }]
 }
 
 const MenuOverlay = ({ links }: any ) => {

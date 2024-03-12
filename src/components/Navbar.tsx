@@ -11,16 +11,16 @@ interface ILinks {
 
 const navLinks: any[] = [
   {
-    title: "About",
-    path: "#about",
-  },
-  {
     title: "Projects",
     path: "#projects",
   },
   {
-    title: "Contact",
-    path: "#contact",
+    title: "Linkedin",
+    path: "https://www.linkedin.com/in/vitor-rodrigues-a55b682b0/",
+  },
+  {
+    title: "Github",
+    path: "https://github.com/vitorRodriguesDev",
   },
 ];
 
@@ -36,7 +36,8 @@ const Navbar = () => {
         >
           Portifolio
         </Link>
-        <div className="mobile-menu block md:hidden">
+       {/**
+        *  <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
@@ -53,6 +54,7 @@ const Navbar = () => {
             </button>
           )}
         </div>
+        */}
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (

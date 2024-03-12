@@ -4,7 +4,7 @@ interface INavLink {
     href: string, title: string
 }
 
-const NavLink = ({ href, title }: INavLink) => {
+const NavLink = ({ href, title }: any) => {
   return (
     <Link
       href={href}
